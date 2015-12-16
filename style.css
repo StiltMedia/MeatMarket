@@ -56,32 +56,32 @@ h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.1;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.3;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.1;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -130,6 +130,10 @@ section.no-padding {
   padding: 0;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 /* animation - - - - */
 /* Menu Fade In Animation */
 @-webkit-keyframes fadeInUp {
@@ -175,7 +179,7 @@ section.no-padding {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   color: #1b1b1b;
   text-transform: uppercase;
@@ -188,7 +192,7 @@ section.no-padding {
   background-color: #1b1b1b;
   padding: 8px 24px;
   border: 2px solid #1b1b1b;
-  font-size: 19px;
+  font-size: 15px;
   color: white;
 }
 .btn-dark:hover, .btn-dark:active, .btn-dark:focus {
@@ -208,9 +212,32 @@ section.no-padding {
 .btn.full {
   width: 100%;
 }
+.btn-large {
+  height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #dddddd;
+  font-size: 20px;
+}
 
+@media screen and (max-width: 380px) {
+  .btn.btn-dark {
+    padding: 8px 0;
+  }
+}
 .input-group {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -221,7 +248,7 @@ section.no-padding {
   border: none;
   border-bottom: 1px solid #1b1b1b;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 12px;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #1b1b1b;
@@ -231,12 +258,20 @@ section.no-padding {
 .form-login.form-alt .form-control,
 .form-login.form-alt .form-control:focus {
   padding: 20px;
-  height: 66px;
+  height: 46px;
   border: 1px solid #dddddd;
   color: #c8c8c8;
 }
 .form-login.form-alt textarea {
   min-height: 340px;
+}
+
+.form-login + .button {
+  margin-top: 20px;
+}
+
+.focus {
+  display: none;
 }
 
 .inputfile {
@@ -253,12 +288,12 @@ section.no-padding {
 .inputfile + label:focus {
   position: absolute;
   display: block;
-  padding: 20px;
-  height: 66px;
+  padding: 15px 20px;
+  height: 46px;
   width: 100%;
   background-color: white;
   border: 1px solid #dddddd;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: #c8c8c8;
 }
@@ -323,6 +358,11 @@ section.no-padding {
 }
 .logo-screen img {
   margin: 0 auto;
+  width: 50%;
+}
+.logo-screen a {
+  font-size: 12px;
+  color: #c8c8c8;
 }
 
 /* -Login*/
@@ -344,13 +384,13 @@ section.no-padding {
 }
 
 .signup-link {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .signup-link .link {
-  font-size: 22px;
+  font-size: 16px;
 }
 .signup-link .link-small {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 /* -Protected*/
@@ -364,6 +404,9 @@ section.no-padding {
 /* -signup*/
 .form-login.signup .form-control {
   padding: 12px 2px;
+}
+.form-login .link {
+  font-size: 13px;
 }
 
 /* =2. Think Tank
@@ -398,8 +441,7 @@ section.no-padding {
   z-index: 10;
 }
 .header-top .go-back i img {
-  margin-right: 10px;
-  vertical-align: bottom;
+  margin: -5px 10px 0 0;
 }
 .header-top .go-back h3 {
   display: inline-block;
@@ -431,6 +473,91 @@ section.no-padding {
   border-bottom: 1px solid #dddddd;
   z-index: 10;
 }
+.header-lower.centered {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.header-lower.no-padding {
+  padding: 0;
+}
+.header-lower .date,
+.header-lower .calendar,
+.header-lower .add {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid #dddddd;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+.header-lower .date {
+  padding: 32px 0;
+  width: 60%;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.header-lower .date p {
+  margin-bottom: 0;
+}
+.header-lower .date-alone {
+  border: none;
+}
+.header-lower .add:not(.add-post),
+.header-lower .calendar {
+  width: 20%;
+}
+.header-lower .add:not(.add-post) a,
+.header-lower .calendar a {
+  padding: 30px 0;
+}
+.header-lower .add:not(.add-post) {
+  border: none;
+}
+.header-lower .date img,
+.header-lower .calendar img {
+  max-width: 50%;
+}
+.header-lower .calendar.calendar-inner {
+  border-right: none;
+}
+.header-lower .calendar.calendar-inner a {
+  display: block;
+  margin-right: -20px;
+  padding: 30px 10px;
+  border: none;
+  border-left: 1px solid #ccc;
+}
+.header-lower.header-calendar {
+  display: block;
+  height: 100px;
+}
+.header-lower.header-calendar .date {
+  display: block;
+  padding: 11px 0;
+  width: 100%;
+}
+.header-lower.header-calendar .date .current-day {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 2px 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 26px;
+}
+.header-lower .search img {
+  width: 70%;
+}
 
 /* =3. Posts
 ----------------------------------------------------------------- */
@@ -442,6 +569,7 @@ section.no-padding {
 }
 .posts h6 {
   margin: 0;
+  line-height: 1;
 }
 .posts .post {
   position: relative;
@@ -470,6 +598,12 @@ section.no-padding {
   border-radius: 50%;
   top: 26px;
   left: 10px;
+}
+.posts .post .post-meta span {
+  font-size: 11px;
+}
+.posts .post .post-comments p {
+  font-size: 12px;
 }
 
 /* =4. Footer
@@ -521,6 +655,61 @@ section.no-padding {
   border: none;
 }
 
+/* footer top*/
+.footer-top {
+  height: 160px;
+}
+.footer-top .restaurant-buttons {
+  position: fixed;
+  bottom: 80px;
+  width: 100%;
+  height: 160px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f8f8f8;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  text-align: center;
+}
+.footer-top .restaurant-buttons .restaurant-button {
+  padding: 20px;
+  width: 40%;
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+.footer-top .restaurant-buttons .restaurant-button h3 {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+.footer-top .restaurant-buttons .restaurant-button svg {
+  max-width: 30px;
+  height: auto;
+}
+.footer-top .restaurant-buttons .restaurant-button.active {
+  background-color: #f26c4f;
+}
+.footer-top .restaurant-buttons .restaurant-button.active .svg path,
+.footer-top .restaurant-buttons .restaurant-button.active .svg rect,
+.footer-top .restaurant-buttons .restaurant-button.active .svg line {
+  stroke: white;
+}
+.footer-top .restaurant-buttons .restaurant-button.active .svg rect[x="164"] {
+  fill: #fff;
+}
+.footer-top .restaurant-buttons .restaurant-button.active h3 {
+  color: white;
+}
+
 /* =5. Screen Inner
 ----------------------------------------------------------------- */
 .screen-inner {
@@ -537,6 +726,9 @@ section.no-padding {
   padding: 20px;
   background-color: white;
   border: 1px solid #dddddd;
+}
+.post-inside .text-container .post-title h3 {
+  margin: 0;
 }
 .post-inside .text-container .post-title h6 {
   margin: 0;
@@ -579,4 +771,215 @@ section.no-padding {
 }
 .post-inside .text-container .comments .media-body .media-heading {
   margin: 0;
+}
+.post-inside .text-container .comments .media-body p {
+  font-size: 12px;
+}
+
+/* restaurants*/
+.restaurants .restaurant-link {
+  margin-bottom: 20px;
+}
+
+/* account home*/
+.account-home {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.account-home .account-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 8px 20px;
+  padding: 20px;
+  width: 45%;
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+.account-home .account-box h3 {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .account-home .account-box h3 {
+    font-size: 14px;
+  }
+  .account-home .account-box img {
+    max-width: 45px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .account-home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .account-home .account-box {
+    width: 100%;
+  }
+}
+/* =6. Specials Items
+----------------------------------------------------------------- */
+.special-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+.special-item .special-image {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.special-item .special-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 10px;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+.special-item .special-content h4 {
+  margin: 0 0 3px;
+}
+.special-item .special-content p {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+/* =7. Inventory Items
+----------------------------------------------------------------- */
+.inventory-items .inventory-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+.inventory-items .inventory-item .title {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+  margin: 0;
+  padding-right: 20px;
+}
+.inventory-items .inventory-item .image {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 1px solid #dddddd;
+}
+
+/* =8. Calendar
+----------------------------------------------------------------- */
+div.zabuto_calendar {
+  position: relative;
+  top: 10px;
+}
+
+div.zabuto_calendar .table tr.calendar-dow-header th {
+  padding: 20px 0 15px;
+  background-color: transparent;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  border: none;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th span {
+  padding: 0;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th {
+  margin: 0 -20px;
+  background-color: transparent;
+  border-bottom: 1px solid #dddddd;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th {
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: bottom;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header th {
+  padding: 10px 0;
+}
+
+div.zabuto_calendar .table tr:last-child {
+  border: none;
+}
+
+div.zabuto_calendar .table tr td div.day {
+  height: 0;
+  width: 25px;
+  height: 25px;
+  padding: 11px 0;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+  margin: 5px auto;
+  line-height: 0;
+}
+
+div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-today {
+  display: inline;
+  padding: 2px 4px 2px 3px;
+  background-color: #1b1b1b;
+  border-radius: 50%;
+  font-size: inherit;
+  font-weight: 400;
+  color: #fff;
+  line-height: 0;
+  text-shadow: none;
 }
