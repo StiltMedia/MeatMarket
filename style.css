@@ -265,6 +265,9 @@ section.no-padding {
 .form-login.form-alt textarea {
   min-height: 340px;
 }
+.form-login.form-alt input[type="date"].form-control {
+  padding: 13px 20px;
+}
 
 .form-login + .button {
   margin-top: 20px;

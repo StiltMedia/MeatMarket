@@ -277,6 +277,9 @@ section {
     textarea {
         min-height: 340px;
     }
+    input[type="date"].form-control {
+        padding: 13px 20px;
+    }
 }
 .form-login + .button {
     margin-top: 20px;
