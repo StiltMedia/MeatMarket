@@ -2,11 +2,11 @@
 Theme Name: Meat Market App
 Theme URI: http://demo.powerthemes.club/themes/classifieds/
 Description: Meat Market App
-Author: powerthemes
+Author: PowerThemes
 Author URI: http://themeforest.net/user/pebas/
 License: GNU General Public License version 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Version: 1.2
+Version: 1.0
 Tags: white
 */
 
@@ -24,6 +24,25 @@ Tags: white
             - font families
             - mixins
 -0-.    Overall & common styling
+            - main button
+            - input fields
+1.      Screen
+            - -login
+            - -protected
+            - -signup
+2.      Think Tank
+            - calendar
+3.      Posts
+4.      Footer
+            - footer top
+5.      Screen Inner
+            - post inside
+            - restaurants
+            - account home
+6.      Specials Items
+7.      Inventory Items
+8.      Calendar
+9.      Modal
 
 
 ----------------------------------------------- */
@@ -253,6 +272,7 @@ section {
         padding: 8px auto;
     }
 }
+// input fields
 .input-group {
     margin-bottom: 20px;
     width: 100%;
