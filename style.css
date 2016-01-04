@@ -213,7 +213,7 @@ section.no-padding {
   width: 100%;
 }
 .btn-large {
-  height: 200px;
+  height: 130px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -233,7 +233,7 @@ section.no-padding {
 
 @media screen and (max-width: 380px) {
   .btn.btn-dark {
-    padding: 8px 0;
+    padding: 8px auto;
   }
 }
 .input-group {
@@ -260,7 +260,10 @@ section.no-padding {
   padding: 20px;
   height: 46px;
   border: 1px solid #dddddd;
-  color: #c8c8c8;
+  color: #1b1b1b;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
 }
 .form-login.form-alt textarea {
   min-height: 340px;
@@ -367,6 +370,9 @@ section.no-padding {
   font-size: 12px;
   color: #c8c8c8;
 }
+.logo-screen .edit-profile {
+  width: 30%;
+}
 
 /* -Login*/
 .form-login .form-control {
@@ -415,13 +421,13 @@ section.no-padding {
 /* =2. Think Tank
 ----------------------------------------------------------------- */
 .header-container {
-  height: 90px;
+  height: 60px;
 }
 
 .header-top {
   position: fixed;
   top: 0;
-  height: 90px;
+  height: 60px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -449,13 +455,18 @@ section.no-padding {
 .header-top .go-back h3 {
   display: inline-block;
   margin: 0;
+  font-size: 14px;
   font-weight: 400;
+}
+.header-top .profile img {
+  width: 50px;
+  border: 2px solid #f8f9f9;
 }
 
 .header-lower {
   position: fixed;
   width: 100%;
-  height: 90px;
+  height: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -504,8 +515,8 @@ section.no-padding {
   text-align: center;
 }
 .header-lower .date {
-  padding: 32px 0;
-  width: 60%;
+  padding: 5px 0;
+  width: 70%;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -522,14 +533,14 @@ section.no-padding {
 }
 .header-lower .add:not(.add-post) a,
 .header-lower .calendar a {
-  padding: 30px 0;
+  padding: 16px 0;
 }
 .header-lower .add:not(.add-post) {
   border: none;
 }
 .header-lower .date img,
 .header-lower .calendar img {
-  max-width: 50%;
+  max-width: 60%;
 }
 .header-lower .calendar.calendar-inner {
   border-right: none;
@@ -537,7 +548,7 @@ section.no-padding {
 .header-lower .calendar.calendar-inner a {
   display: block;
   margin-right: -20px;
-  padding: 30px 10px;
+  padding: 17px 10px;
   border: none;
   border-left: 1px solid #ccc;
 }
@@ -569,6 +580,9 @@ section.no-padding {
 }
 .posts .post-title {
   padding-left: 10px;
+}
+.posts .post-date p {
+  margin: 0;
 }
 .posts h6 {
   margin: 0;
@@ -612,7 +626,7 @@ section.no-padding {
 /* =4. Footer
 ----------------------------------------------------------------- */
 .footer-nav {
-  height: 80px;
+  height: 40px;
 }
 .footer-nav nav ul {
   position: fixed;
@@ -626,7 +640,7 @@ section.no-padding {
   -ms-flex-align: stretch;
   align-items: stretch;
   margin: 0;
-  height: 80px;
+  height: 40px;
   width: 100%;
   list-style-type: none;
   z-index: 10;
@@ -644,13 +658,14 @@ section.no-padding {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding: 20px;
   width: 100%;
   background-color: #1b1b1b;
   border-right: 1px solid #000;
 }
 .footer-nav nav ul li a {
   display: block;
-  padding: 25px 0;
+  padding: 0;
   width: 100%;
   text-align: center;
 }
@@ -660,13 +675,13 @@ section.no-padding {
 
 /* footer top*/
 .footer-top {
-  height: 160px;
+  height: 100px;
 }
 .footer-top .restaurant-buttons {
   position: fixed;
-  bottom: 80px;
+  bottom: 40px;
   width: 100%;
-  height: 160px;
+  height: 100px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -685,14 +700,15 @@ section.no-padding {
   text-align: center;
 }
 .footer-top .restaurant-buttons .restaurant-button {
-  padding: 20px;
+  padding: 10px;
   width: 40%;
+  max-height: 80px;
   background-color: white;
   border: 1px solid #dddddd;
 }
 .footer-top .restaurant-buttons .restaurant-button h3 {
-  margin: 5px 0 0;
-  font-size: 16px;
+  margin: 0;
+  font-size: 14px;
 }
 .footer-top .restaurant-buttons .restaurant-button svg {
   max-width: 30px;
@@ -833,14 +849,23 @@ section.no-padding {
 }
 @media screen and (max-width: 400px) {
   .account-home {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .account-home .account-box {
-    width: 100%;
+    -webkit-box-align: inherit;
+    -webkit-align-items: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    -webkit-flex-basis: 45%;
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+    margin: 0 0 20px;
+  }
+  .account-home .account-box h3 {
+    font-size: 12px;
   }
 }
 /* =6. Specials Items
@@ -920,7 +945,7 @@ section.no-padding {
 ----------------------------------------------------------------- */
 div.zabuto_calendar {
   position: relative;
-  top: 10px;
+  top: 35px;
 }
 
 div.zabuto_calendar .table tr.calendar-dow-header th {
@@ -975,9 +1000,11 @@ div.zabuto_calendar .table tr td div.day {
   line-height: 0;
 }
 
-div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-today {
+div.zabuto_calendar .badge-today,
+div.zabuto_calendar .active,
+div.zabuto_calendar div.legend span.badge-today {
   display: inline;
-  padding: 2px 4px 2px 3px;
+  padding: 2px 8px 2px 7px;
   background-color: #1b1b1b;
   border-radius: 50%;
   font-size: inherit;
