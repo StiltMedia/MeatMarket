@@ -224,6 +224,9 @@ section {
         border: 2px solid $dark;
         font-size: 15px;
         color: $white;
+        &:focus {
+            color: $white;
+        }
         &:hover {
             background-color: darken($dark, 10%);
         }
@@ -256,6 +259,7 @@ section {
 }
 .form-control,
 .form-control:focus {
+    -webkit-appearance: none;
     height: 28px;
     width: 100%;
     border: none;
@@ -354,12 +358,24 @@ section {
 ----------------------------------------------------------------- */
 .screen {
     padding: 20px;
+    &.edit {
+        .logo-screen {
+            margin: 3rem 0;
+        }
+        .screen-inner {
+            .input-group {
+                input {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
 }
 .logo-screen {
     margin: 3rem 0 6rem;
     img {
         margin: 0 auto;
-        width: 50%;
+        width: 30%;
     }
     a {
         font-size: 12px;
@@ -482,11 +498,12 @@ section {
         text-align: center;
     }
     .date {
-        padding: 5px 0;
+        padding: 17px 5px;
         width: 70%;
         justify-content: space-around;
         p {
             margin-bottom: 0;
+            font-size: 12px;
         }
         &-alone {
             border: none;
@@ -886,4 +903,17 @@ div.zabuto_calendar div.legend span.badge-today {
     color: #fff;
     line-height: 0;
     text-shadow: none;
+}
+/* =9. Modal
+----------------------------------------------------------------- */
+.modal {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    .modal-content {
+        border-radius: 0;
+    }
 }

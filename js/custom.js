@@ -76,11 +76,16 @@ jQuery(document).ready(function ($) {
     });
 
     // hide footer on input focus
-    $('input, textarea').blur(function() {
+    $('input, textarea').blur(function () {
             $('.footer-nav').removeClass("focus");
         })
-        .focus(function() {
+        .focus(function () {
             $('.footer-nav').addClass("focus")
         });
+
+    // update image on click
+    $('.edit-image img, .edit-image a').on('click', function () {
+        $('.image-upload').click();
+    });
 
 });

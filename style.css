@@ -202,6 +202,9 @@ section.no-padding {
   color: #1b1b1b;
   outline: 0;
 }
+.btn-dark:focus {
+  color: white;
+}
 .btn-dark:hover {
   background-color: #010101;
 }
@@ -243,6 +246,7 @@ section.no-padding {
 
 .form-control,
 .form-control:focus {
+  -webkit-appearance: none;
   height: 28px;
   width: 100%;
   border: none;
@@ -358,13 +362,19 @@ section.no-padding {
 .screen {
   padding: 20px;
 }
+.screen.edit .logo-screen {
+  margin: 3rem 0;
+}
+.screen.edit .screen-inner .input-group input {
+  background-color: transparent;
+}
 
 .logo-screen {
   margin: 3rem 0 6rem;
 }
 .logo-screen img {
   margin: 0 auto;
-  width: 50%;
+  width: 30%;
 }
 .logo-screen a {
   font-size: 12px;
@@ -450,7 +460,7 @@ section.no-padding {
   z-index: 10;
 }
 .header-top .go-back i img {
-  margin: -5px 10px 0 0;
+  margin: 0 10px 0 0;
 }
 .header-top .go-back h3 {
   display: inline-block;
@@ -515,7 +525,7 @@ section.no-padding {
   text-align: center;
 }
 .header-lower .date {
-  padding: 5px 0;
+  padding: 17px 5px;
   width: 70%;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
@@ -523,6 +533,7 @@ section.no-padding {
 }
 .header-lower .date p {
   margin-bottom: 0;
+  font-size: 12px;
 }
 .header-lower .date-alone {
   border: none;
@@ -1012,4 +1023,16 @@ div.zabuto_calendar div.legend span.badge-today {
   color: #fff;
   line-height: 0;
   text-shadow: none;
+}
+
+/* =9. Modal
+----------------------------------------------------------------- */
+.modal {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.modal .modal-content {
+  border-radius: 0;
 }
