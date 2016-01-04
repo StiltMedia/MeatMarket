@@ -460,7 +460,7 @@ section.no-padding {
   z-index: 10;
 }
 .header-top .go-back i img {
-  margin: 0 10px 0 0;
+  margin: -5px 10px 0 0;
 }
 .header-top .go-back h3 {
   display: inline-block;
@@ -631,6 +631,7 @@ section.no-padding {
   font-size: 11px;
 }
 .posts .post .post-comments p {
+  margin: 0;
   font-size: 12px;
 }
 
