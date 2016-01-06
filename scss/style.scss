@@ -267,9 +267,15 @@ section {
         font-size: 20px;
     }
 }
+.inventory {
+    margin: 40px 0;
+}
 @media screen and (max-width: 380px) {
     .btn.btn-dark {
         padding: 8px auto;
+        &.think-buttons {
+            padding: 8px;
+        }
     }
 }
 // input fields
@@ -326,7 +332,7 @@ section {
 .inputfile + label:focus {
     position: absolute;
     display: block;
-    padding: 15px 20px;
+    padding: 12px 20px;
     height: 46px;
     width: 100%;
     background-color: $white;
@@ -471,6 +477,11 @@ section {
     border-bottom: 1px solid $borderColor;
     z-index: 10;
     .go-back {
+        a {
+            img {
+                max-width: 40px;
+            }
+        }
         i {
             img {
                 margin: -5px 10px 0 0;
@@ -704,6 +715,20 @@ section {
                     color: $white;
                 }
             }
+            &.completed {
+                background-color: #46cc5a;
+                .svg path,
+                .svg rect,
+                .svg line {
+                    stroke: $white;
+                }
+                .svg rect[x="164"] {
+                    fill: #fff;
+                }
+                h3 {
+                    color: $white;
+                }
+            }
         }
     }
 }
@@ -791,7 +816,9 @@ section {
         background-color: $white;
         border: 1px solid $borderColor;
         h3 {
+            margin-bottom: 0;
             font-size: 14px;
+            line-height: 1px;
         }
     }
 }

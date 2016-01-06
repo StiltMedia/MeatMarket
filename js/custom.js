@@ -65,10 +65,10 @@ jQuery(document).ready(function ($) {
 
 
     // add class active on restaurant buttons
-    $('.restaurant-button').on('click', function () {
+/*    $('.restaurant-button').on('click', function () {
         $('.restaurant-button').removeClass('active');
         $(this).addClass('active');
-    });
+    });*/
 
     <!-- initialize the calendar on ready -->
     $("#calendar").zabuto_calendar({
