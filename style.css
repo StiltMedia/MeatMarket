@@ -302,6 +302,19 @@ section.no-padding {
   padding: 13px 20px;
 }
 
+.black-field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+.black-field input,
+.black-field input:focus {
+  background-color: #fafafa;
+  border: none;
+}
+
 .form-login + .button {
   margin-top: 20px;
 }
@@ -713,6 +726,9 @@ section.no-padding {
 .footer-nav nav ul li:last-child {
   border: none;
 }
+.footer-nav nav ul li:not(:first-child) img {
+  max-width: 20px;
+}
 
 /* footer top*/
 .footer-top {
@@ -754,6 +770,8 @@ section.no-padding {
 .footer-top .restaurant-buttons .restaurant-button svg {
   max-width: 30px;
   height: auto;
+  width: 30px;
+  height: 39px;
 }
 .footer-top .restaurant-buttons .restaurant-button.active {
   background-color: #f26c4f;
@@ -1060,14 +1078,19 @@ div.zabuto_calendar .table tr td div.day {
 div.zabuto_calendar .badge-today,
 div.zabuto_calendar .active,
 div.zabuto_calendar div.legend span.badge-today {
-  display: inline;
-  padding: 2px 8px 2px 7px;
+  position: relative;
+  display: inline-block;
+  top: -12px;
+  left: -1px;
+  padding: 6px 0;
+  width: 25px;
+  height: 25px;
   background-color: #1b1b1b;
   border-radius: 50%;
   font-size: inherit;
   font-weight: 400;
   color: #fff;
-  line-height: 0;
+  line-height: 1;
   text-shadow: none;
 }
 
