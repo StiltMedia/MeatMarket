@@ -726,7 +726,7 @@ section.no-padding {
 .footer-nav nav ul li:last-child {
   border: none;
 }
-.footer-nav nav ul li:not(:first-child) img {
+.footer-nav nav ul li img {
   max-width: 20px;
 }
 
@@ -763,6 +763,9 @@ section.no-padding {
   background-color: white;
   border: 1px solid #dddddd;
 }
+.footer-top .restaurant-buttons .restaurant-button a {
+  display: block;
+}
 .footer-top .restaurant-buttons .restaurant-button h3 {
   margin: 0;
   font-size: 14px;
@@ -781,7 +784,7 @@ section.no-padding {
 .footer-top .restaurant-buttons .restaurant-button.active .svg line {
   stroke: white;
 }
-.footer-top .restaurant-buttons .restaurant-button.active .svg rect[x="164"] {
+.footer-top .restaurant-buttons .restaurant-button.active .svg rect[x="180.555"] {
   fill: #fff;
 }
 .footer-top .restaurant-buttons .restaurant-button.active h3 {
