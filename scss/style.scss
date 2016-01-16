@@ -528,6 +528,11 @@ section {
     &.no-padding {
         padding: 0;
     }
+    .add-special {
+        img {
+            max-width: 26px;
+        }
+    }
     .date,
     .calendar,
     .add {
@@ -674,6 +679,11 @@ section {
                     padding: 0;
                     width: 100%;
                     text-align: center;
+                }
+                &:first-child {
+                    img {
+                        max-width: 25px;
+                    }
                 }
                 &:last-child {
                     border: none;
@@ -829,7 +839,7 @@ section {
         text-align: center;
         margin: 0 8px 20px;
         padding: 20px;
-        width: 45%;
+        width: 100%;
         background-color: $white;
         border: 1px solid $borderColor;
         h3 {
@@ -856,7 +866,7 @@ section {
         justify-content: space-between;
         .account-box {
             align-items: inherit;
-            flex-basis: 45%;
+            flex-basis: 100%;
             margin: 0 0 20px;
             h3 {
                 font-size: 12px;

@@ -548,6 +548,9 @@ section.no-padding {
 .header-lower.no-padding {
   padding: 0;
 }
+.header-lower .add-special img {
+  max-width: 26px;
+}
 .header-lower .date,
 .header-lower .calendar,
 .header-lower .add {
@@ -722,6 +725,9 @@ section.no-padding {
   padding: 0;
   width: 100%;
   text-align: center;
+}
+.footer-nav nav ul li:first-child img {
+  max-width: 25px;
 }
 .footer-nav nav ul li:last-child {
   border: none;
@@ -907,7 +913,7 @@ section.no-padding {
   text-align: center;
   margin: 0 8px 20px;
   padding: 20px;
-  width: 45%;
+  width: 100%;
   background-color: white;
   border: 1px solid #dddddd;
 }
@@ -937,9 +943,9 @@ section.no-padding {
     -webkit-align-items: inherit;
     -ms-flex-align: inherit;
     align-items: inherit;
-    -webkit-flex-basis: 45%;
-    -ms-flex-preferred-size: 45%;
-    flex-basis: 45%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
     margin: 0 0 20px;
   }
   .account-home .account-box h3 {
