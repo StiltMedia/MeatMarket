@@ -997,3 +997,41 @@ div.zabuto_calendar div.legend span.badge-today {
         border-radius: 0;
     }
 }
+/* search popup*/
+.search-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 999;
+    @include transition();
+    .input-group {
+        .form-control.form-alt.white {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $white;
+            color: $white;
+        }
+        i {
+            top: -5px;
+            right: 0;
+            left: auto;
+            max-width: 24px;
+        }
+    }
+    .close-overlay {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        max-width: 24px;
+    }
+    &.active {
+        display: flex;
+    }
+}

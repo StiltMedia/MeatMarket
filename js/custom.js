@@ -65,10 +65,10 @@ jQuery(document).ready(function ($) {
 
 
     // add class active on restaurant buttons
-/*    $('.restaurant-button').on('click', function () {
-        $('.restaurant-button').removeClass('active');
-        $(this).addClass('active');
-    });*/
+    /*    $('.restaurant-button').on('click', function () {
+     $('.restaurant-button').removeClass('active');
+     $(this).addClass('active');
+     });*/
 
     <!-- initialize the calendar on ready -->
     $("#calendar").zabuto_calendar({
@@ -86,6 +86,17 @@ jQuery(document).ready(function ($) {
     // update image on click
     $('.edit-image img, .edit-image a').on('click', function () {
         $('.image-upload').click();
+    });
+
+    // search page overlay
+    $('.footer-nav li:last-child').on('click', function () {
+        $('.search-popup').addClass('active');
+        $('body').css('overflowY', 'hidden');
+        $('.search-popup input').focus();
+    });
+    $('.search-popup .close-overlay').on('click', function () {
+        $('.search-popup').removeClass('active');
+        $('body').css('overflowY', 'auto');
     });
 
 });
